@@ -29,9 +29,7 @@ internal class Program
             .Services.AddDbContext<ApplicationDatabaseContext>(
                 optionsAction: dbContextOptionsBuilder =>
                     dbContextOptionsBuilder.UseNpgsql(
-                        connectionString: builder.Configuration.GetConnectionString(
-                            name: "PostgresqlConnection"
-                        )
+                        connectionString: builder.Configuration["database-connection-string"]
                     )
             )
             .AddEndpointsApiExplorer()
@@ -66,7 +64,11 @@ internal class Program
                                 path: "/run/secrets/certificate-messaging",
                                 password: builder.Configuration["certificate-messaging-password"]
                             );
-                        httpsConnectionAdapterOptions.SslProtocols = System.Security.Authentication.SslProtocols.Tls13;
+                        httpsConnectionAdapterOptions.SslProtocols = System
+                            .Security
+                            .Authentication
+                            .SslProtocols
+                            .Tls13;
                     }
                 );
                 kestrelServerOptions.ListenAnyIP(

@@ -9,6 +9,8 @@ secrets:
     file: certificate-messaging/messaging.pfx
   certificate-messaging-password:
     file: certificate-messaging/password
+  database-connection-string:
+    file: database/connection-string
   database-password:
     file: database/password
   initialize-script:
@@ -57,3 +59,4 @@ services:
       - certificate-keys-password
       - certificate-messaging
       - certificate-messaging-password
+      - database-connection-string
