@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "ReadLatest";
+}
+
+<div class="container container-size text-center pb-3">
+    <h1 class="display-4">Read Latest Messages</h1>
+    <p class="mb-3">In last 10 minutes</p>
+    <button class="btn btn-primary mb-3" id="loadMessagesButton" type="button">Read</button>
+    <div class="align-items-center d-flex flex-column gap-3 pt-3 text-break" id="messagesContainer"></div>
+</div>
+
+<script asp-append-version="true" src="/messaging/chat/read-latest/javascript/script.js"></script>

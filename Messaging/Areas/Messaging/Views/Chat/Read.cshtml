@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Read";
+}
+
+<div class="container container-size text-center pb-3">
+    <h1 class="display-4 mb-3">Read Messages</h1>
+    <div class="align-items-center d-flex flex-column gap-3 pt-3 text-break" id="messagesContainer"></div>
+</div>
+
+<script asp-append-version="true" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script asp-append-version="true" src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.min.js"></script>
+<script asp-append-version="true" src="/messaging/chat/read/javascript/script.js"></script>

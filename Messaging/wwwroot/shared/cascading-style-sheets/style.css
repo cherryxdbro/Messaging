@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+:root {
+  text-rendering: optimizeSpeed;
+}
+
+.container-size {
+  max-width: 32rem !important;
+}
+
+.message {
+  width: -webkit-fill-available;
+}
+
+.bi {
+  fill: currentColor;
+  height: 1rem;
+  width: 1rem;
+}

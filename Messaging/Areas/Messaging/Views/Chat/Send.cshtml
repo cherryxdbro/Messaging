@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Send";
+}
+
+<div class="container container-size text-center">
+    <h1 class="display-4 mb-3">Send Messages</h1>
+    <form asp-action="Send" asp-area="Messaging" asp-controller="ChatApi" class="align-items-center d-flex flex-column gap-3" id="messageForm" method="post">
+        <div class="message">
+            <label class="form-label" for="name">Name:</label>
+            <input class="form-control" id="name" name="name" required type="text" />
+        </div>
+        <div class="message">
+            <label class="form-label" for="text">Text:</label>
+            <textarea class="form-control" id="text" name="text" required rows="4"></textarea>
+        </div>
+        <button class="btn btn-primary mb-3" type="submit">Send</button>
+    </form>
+    <button class="btn btn-primary mb-3" id="clearAlerts" type="button">Clear alerts</button>
+    <div class="align-items-center d-flex flex-column pt-3 text-break" id="alertsContainer"></div>
+</div>
+
+<script asp-append-version="true" src="/messaging/chat/send/javascript/script.js"></script>

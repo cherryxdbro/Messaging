@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Messaging</name>
+    </assembly>
+    <members>
+        <member name="T:Messaging.Areas.Messaging.Controllers.ChatApiController">
+            <summary>
+            API Controller for handling messaging operations.
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Messaging.Areas.Messaging.Controllers.ChatApiController.#ctor(Microsoft.Extensions.Logging.ILogger{Messaging.Areas.Messaging.Controllers.ChatApiController})">
+            <summary>
+            API Controller for handling messaging operations.
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Messaging.Areas.Messaging.Controllers.ChatApiController.Send(Messaging.Models.Message)">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Messaging.Areas.Messaging.Controllers.ChatApiController.ReadLatest">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="T:Messaging.Areas.Messaging.Controllers.ChatController">
+             <summary>
+            
+             </summary>
+             <param name="logger"></param>
+        </member>
+        <member name="M:Messaging.Areas.Messaging.Controllers.ChatController.#ctor(Microsoft.Extensions.Logging.ILogger{Messaging.Areas.Messaging.Controllers.ChatController})">
+             <summary>
+            
+             </summary>
+             <param name="logger"></param>
+        </member>
+        <member name="M:Messaging.Areas.Messaging.Controllers.ChatController.Index">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Messaging.Areas.Messaging.Controllers.ChatController.Send">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Messaging.Areas.Messaging.Controllers.ChatController.Read">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Messaging.Areas.Messaging.Controllers.ChatController.ReadLatest">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="T:Messaging.Data.ApplicationDbContext">
+             <summary>
+            
+             </summary>
+             <param name="dbContextOptions"></param>
+        </member>
+        <member name="M:Messaging.Data.ApplicationDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions)">
+             <summary>
+            
+             </summary>
+             <param name="dbContextOptions"></param>
+        </member>
+        <member name="P:Messaging.Data.ApplicationDbContext.DataProtectionKeys">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Messaging.Data.ApplicationDbContext.Messages">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:Messaging.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:Messaging.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Messaging.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Messaging.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Messaging.Models.Message">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Messaging.Models.Message.Id">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Messaging.Models.Message.Name">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Messaging.Models.Message.Text">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Messaging.Models.Message.Timestamp">
+             <summary>
+            
+             </summary>
+        </member>
+    </members>
+</doc>
